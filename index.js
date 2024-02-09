@@ -6,7 +6,8 @@ const bot = new Eris(process.env.token);
 
 // Array of status objects
 const statuses = [
-    { name: "While (noSucces) { tryAgain(); if(dead) break; }", type: 0, url: "https://schoolprograms.my.id" }
+    { name: "schoolprograms.my.id | 🍹 Living my Life with peace", type: 0, },
+    { name: "github.com/Julius-Ulee | 🦖 Asade", type: 0, }
 ];
 
 let currentStatusIndex = 0; // Variable to keep track of the current status index
@@ -18,7 +19,7 @@ bot.on("error", (err) => {
 // Function to update the bot's status
 function updateStatus() {
     const status = statuses[currentStatusIndex];
-    bot.editStatus("streaming", status);
+    bot.editStatus("dnd", status);
     currentStatusIndex = (currentStatusIndex + 1) % statuses.length; // Move to the next status in the array
 }
 
