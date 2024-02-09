@@ -6,8 +6,8 @@ const bot = new Eris(process.env.token);
 
 // Array of status objects
 const statuses = [
-    { name: "schoolprograms.my.id | 🍹 Living my Life with peace", type: 0, },
-    { name: "github.com/Julius-Ulee | 🦖 Asade", type: 0, }
+    { name: "schoolprograms.my.id | 🍹 Living my Life with peace", type: 0, url: "schoolprograms.my.id" },
+    { name: "github.com/Julius-Ulee | 🦖 Asade", type: 0, url: "github.com/Julius-Ulee" }
 ];
 
 let currentStatusIndex = 0; // Variable to keep track of the current status index
