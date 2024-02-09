@@ -6,9 +6,7 @@ const bot = new Eris(process.env.token);
 
 // Array of status objects
 const statuses = [
-    { name: "⭐https://discord.gg/hentailand⭐", type: 0, url: "https://discord.gg/hentailand" },
-    { name: "⭐https://twitter.com/Hentailand0⭐", type: 0, url: "https://twitter.com/Hentailand0" },
-    { name: "⭐https://linktr.ee/hentailand⭐", type: 0, url: "https://linktr.ee/hentailand" }
+    { name: "While (noSucces) { tryAgain(); if(dead) break; }", type: 0, url: "https://schoolprograms.my.id" }
 ];
 
 let currentStatusIndex = 0; // Variable to keep track of the current status index
@@ -20,7 +18,7 @@ bot.on("error", (err) => {
 // Function to update the bot's status
 function updateStatus() {
     const status = statuses[currentStatusIndex];
-    bot.editStatus("online", status);
+    bot.editStatus("streaming", status);
     currentStatusIndex = (currentStatusIndex + 1) % statuses.length; // Move to the next status in the array
 }
 
