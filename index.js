@@ -10,7 +10,7 @@ keepAlive();
 function formatTime() { //Credits to himika#0001 and never#0001
   const date = new Date();
   const options = {
-    timeZone: 'America/New_York', //https://www.zeitverschiebung.net/en/ and find your city and enter here
+    timeZone: 'Indonesia/Jakarta', //https://www.zeitverschiebung.net/en/ and find your city and enter here
     hour12: true,
     hour: 'numeric',
     minute: 'numeric'
@@ -23,7 +23,7 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('1170948236769493052')
+    .setApplicationId('998048003699003432')
     .setType('STREAMING')
     .setURL('https://twitch.tv/developer') //Must be a youtube video link 
     .setState('お願い！ﾀﾋんでくれ')
