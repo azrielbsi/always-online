@@ -5,7 +5,7 @@ const keep_alive = require('./keep_alive.js');
 // Replace TOKEN with your bot account's token
 const bot = new Eris(process.env.token);
 
-const targetChannelId = 1200747293033382051;
+const targetChannelId = 954760777770864712;
 const logFilePath = "logs.json"; // Path to the log file
 
 // Function to load the logs from the file
