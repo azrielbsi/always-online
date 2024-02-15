@@ -19,7 +19,7 @@ bot.on("error", (err) => {
 // Function to update the bot's status
 function updateStatus() {
     const status = statuses[currentStatusIndex];
-    bot.editStatus("idle", status);
+    bot.editStatus("online", status);
     currentStatusIndex = (currentStatusIndex + 1) % statuses.length; // Move to the next status in the array
 }
 
