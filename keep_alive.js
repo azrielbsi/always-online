@@ -1,6 +1,11 @@
-var http = require('http');
+const http = require('http');
 
-http.createServer(function (req, res) {
-  res.write("schoolprograms.my.id");
-  res.end();
-}).listen(8080);
+const server = http.createServer((req, res) => {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('schoolprograms.my.id');
+});
+
+const PORT = 8080;
+server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
