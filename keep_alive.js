@@ -1,6 +1,6 @@
-const http = require('http');
+var http = require('http');
 
-const server = http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('schoolprograms.my.id');
+http.createServer(function (req, res) {
+  res.write("schoolprograms.my.id");
+  res.end();
 }).listen(8080);
